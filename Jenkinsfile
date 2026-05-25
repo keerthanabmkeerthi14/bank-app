@@ -12,7 +12,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/keerthanabmkeerthi14/bank-app.git'
+                    url: 'https://github.com/keerthanabmkeerthi14/bank-app.git',
+                    credentialsId: 'github-token'
             }
         }
 
